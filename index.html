@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4531257337326657"
-     crossorigin="anonymous"></script>
-
-	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4531257337326657"
-     crossorigin="anonymous"></script>
-    <meta name="google-site-verification" content="smRGlZ_2TuURtpJzkbbwvi-1a5xnZmuD4wg473SYU58" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Luxe twines Beauty Spa">
-	<meta name="keywords" content="Luxe twines Beauty Spa, Beauty spa near me, Massage near me, Thai Massage, swedish massage services, facial treatment, manicure & pedicure near me, massage spa in Midrand">
-    <title>Luxetwines Beauty Spa</title>
+    <meta name="description" content="Luxe Twines Beauty Spa">
+    <meta name="keywords" content="Luxe Twines Beauty Spa, Beauty spa near me, Massage near me, Thai Massage, Swedish massage, facial treatment, manicure & pedicure, spa in Midrand">
+    <title>Luxe Twines Beauty Spa</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: ffd700;
+            background-color: #fff;
         }
         header {
-            background: linear-gradient(to right, #DEB941, #FCD75F);
+            background: linear-gradient(to right, #FFD700, #FCD75F);
             color: white;
             text-align: center;
             padding: 50px 20px;
@@ -33,7 +32,6 @@
             background-color: white;
             display: flex;
             justify-content: center;
-            align-items: center;
             padding: 10px 0;
         }
         nav a {
@@ -45,34 +43,22 @@
             transition: color 0.3s;
         }
         nav a:hover {
-            color: #ffe4f0;
+            color: #ff758c;
         }
-        .hero {
-            background: url('https://via.placeholder.com/1500x700') no-repeat center center/cover;
+        .slider {
+            width: 100%;
             height: 60vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-            font-size: 2em;
+            overflow: hidden;
+        }
+        .slider img {
+            width: 100%;
+            height: 60vh;
+            object-fit: cover;
         }
         section {
             padding: 50px 20px;
             max-width: 1200px;
             margin: auto;
-        }
-        section h2 {
-            text-align: center;
-            margin-bottom: 30px;
-            font-size: 2.5em;
-            color: #ff758c;
-        }
-        .about p {
-            font-size: 1.2em;
-            text-align: center;
-            line-height: 1.8;
-            color: #333;
         }
         .services {
             display: flex;
@@ -105,123 +91,70 @@
             padding: 0 20px 20px;
             font-size: 1em;
             color: #555;
-            line-height: 1.6;
         }
         footer {
             background-color: #ff758c;
             color: white;
             text-align: center;
             padding: 20px;
-            font-size: 1em;
-        }
-        @media (max-width: 768px) {
-            .services {
-                flex-direction: column;
-                align-items: center;
-            }
-            .service {
-                max-width: 100%;
-            }
-            h1{
-                display: inline-block;
-            }
-            .logo{
-                margin-top: 50px;
-                
-        
-            }
-            button{
-                color: white;
-                width: 50px;
-                border-radius: 25px;
-                background-color: blue;
-            }
-            button:hover{
-                cursor: pointer;
-                opacity: 0.6;
-                transition: 0.18s;
-                color: green;
-                background-color: black;
-            }
-		#abot{
-			color: black;
-			margin-left: 200px;
-			font-size: 35px;
-		}
-		#abot:hover{
-			color: red;
-			transition: 0.18s;
-			opacity: 0.6;
-			cursor: pointer;
-		}
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Luxe Twines Beauty Spa</h1>    <div class="logo">
-            
-
-
+        <h1>Luxe Twines Beauty Spa</h1>
         <p>Your Sanctuary for Relaxation and Rejuvenation</p>
     </header>
     <nav>
-        
         <a href="#about">About Us</a>
         <a href="pools.html">Prices</a>
         <a href="#services">Services</a>
         <a href="contacts.html">Contact</a>
     </nav>
-
-    <div class="hero">
-        <h2>Experience Blissful Relaxation</h2>
+    <div class="slider">
+        <img src="images/muss.jpg" alt="Swedish Massage">
+        <img src="images/miss.jpeg" alt="Thai Massage">
+        <img src="images/mass.jpeg" alt="Hot Stone Massage">
+        <img src="images/facial.jpg" alt="Facial Scrub">
+        <img src="images/wax.jpg" alt="Waxing">
+        <img src="images/manicure.jpg" alt="Manicure & Pedicure">
     </div>
-
     <section id="about" class="about">
         <h2>About Us</h2>
-        <p>Located in the heart of Midrand, Luxe Twines Beauty Spa offers years of expertise in providing outstanding spa services. Our satisfied clients have made us their preferred destination for soul-seeking and rejuvenation. Experience luxury with our specialized services, including Swedish Massage, Thai Massage, Hot Stone Massage, Facial Scrub, Waxing, Manicure, and Pedicure.</p>
+        <p>Located in Midrand, Luxe Twines Beauty Spa offers top-tier spa services, including Swedish Massage, Thai Massage, Hot Stone Massage, Facial Scrub, Waxing, Manicure, and Pedicure.</p>
     </section>
-
     <section id="services">
         <h2>Our Services</h2>
         <div class="services">
             <div class="service">
-                <a href="images/muss.jpg"><img src="images/muss.jpg" alt="Swedish Massage"></a>
+                <img src="images/muss.jpg" alt="Swedish Massage">
                 <h3>Swedish Massage</h3>
-                <p>A relaxing massage technique that improves circulation, reduces stress, and promotes overall relaxation.</p>
+                <p>Relaxing massage technique that improves circulation and reduces stress.</p>
             </div>
             <div class="service">
-                <a href="images/miss.jpeg"><img src="images/miss.jpeg" alt="Thai Massage"></a>
+                <img src="images/miss.jpeg" alt="Thai Massage">
                 <h3>Thai Massage</h3>
-                <p>Combines acupressure, yoga-like stretches, and therapeutic techniques to enhance flexibility and relieve muscle tension.</p>
+                <p>Combines acupressure, yoga-like stretches, and therapeutic techniques.</p>
             </div>
             <div class="service">
-                <a href="images/mass.jpeg"><img src="images/mass.jpeg" alt="Hot Stone Massage"></a>
+                <img src="images/mass.jpeg" alt="Hot Stone Massage">
                 <h3>Hot Stone Massage</h3>
-                <p>Uses heated stones to soothe muscles, improve circulation, and relieve tension, creating a deeply relaxing experience.</p>
-            </div>
-            <div class="service">
-                <a href="images/facial.jpg"><img src="images/facial.jpg" alt="Facial Scrub"></a>
-                <h3>Facial Scrub</h3>
-                <p>An exfoliating treatment that removes dead skin cells, unclogs pores, and revitalizes the skin for a radiant glow.</p>
-            </div>
-            <div class="service">
-                <a href="images/wax.jpg"><img src="images/wax.jpg" alt="Waxing"></a>
-                <h3>Waxing</h3>
-                <p>A hair removal treatment that leaves your skin smooth and silky, enhancing your confidence and comfort.</p>
-            </div>
-            <div class="service">
-                <a href="images/manicure.jpg"><img src="images/manicure.jpg" alt="Manicure & Pedicure"></a>
-                <h3>Manicure & Pedicure</h3>
-                <p>Pamper your hands and feet with luxurious treatments, leaving them soft, nourished, and beautifully groomed.</p>
+                <p>Uses heated stones to soothe muscles and relieve tension.</p>
             </div>
         </div>
-        <a id="abot" href="details.html">Our Salon</a>
     </section>
-
-     
     <footer>
-        <p>&copy; 2025 Luxe Twines Beauty Spa. All rights reserved.  Address: Unit 15!, Cnr Brand Road & Swart Dr, President Park, Midrand 1685 Midrand, Gauteng   Cell: +27 73 770 7739/ 069 417 1354    Email: marthaschimwe5@gmail.com</p>
+        <p>&copy; 2025 Luxe Twines Beauty Spa. All rights reserved. Midrand, Gauteng. Contact: +27 73 770 7739 / 069 417 1354</p>
     </footer>
+    <script>
+        $(document).ready(function(){
+            $('.slider').slick({
+                autoplay: true,
+                autoplaySpeed: 3000,
+                dots: true,
+                arrows: false,
+            });
+        });
+    </script>
 </body>
 </html>
