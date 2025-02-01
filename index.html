@@ -1,12 +1,11 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Luxe Twines Beauty Spa">
-    <meta name="keywords" content="Luxe Twines Beauty Spa, Beauty spa near me, Massage near me, Thai Massage, Swedish massage, facial treatment, manicure & pedicure, waxing, spa in Midrand">
-    <title>Luxe Twines Beauty Spa</title>
+    <meta name="description" content="CalmAura Beauty Spa">
+    <meta name="keywords" content="CalmAura Beauty Spa, Beauty spa near me, Massage near me, Thai Massage, Swedish massage, facial treatment, manicure & pedicure, waxing, spa in Midrand">
+    <title>CalmAura Beauty Spa</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
@@ -17,26 +16,31 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #fff;
+            background-color: #6a1b9a; /* Purple background */
+            color: white;
         }
         header {
-            background: linear-gradient(to right, #FFD700, #FCD75F);
-            color: white;
+            background-color: #6a1b9a; /* Purple background */
+            color: #FFD700; /* Golden yellow text */
             text-align: center;
             padding: 50px 20px;
         }
         header h1 {
             margin: 0;
-            font-size: 3em;
+            font-size: 3.5em;
+        }
+        header img.logo {
+            width: 80px; /* Adjust logo size */
+            margin-top: 20px;
         }
         nav {
-            background-color: white;
+            background-color: #fff;
             display: flex;
             justify-content: center;
             padding: 10px 0;
         }
         nav a {
-            color: goldenrod;
+            color: #6a1b9a; /* Purple text */
             margin: 0 15px;
             text-decoration: none;
             font-weight: bold;
@@ -44,7 +48,7 @@
             transition: color 0.3s;
         }
         nav a:hover {
-            color: #ff758c;
+            color: #FFD700; /* Golden yellow on hover */
         }
         .slider {
             width: 100%;
@@ -62,10 +66,10 @@
             margin: auto;
         }
         .services {
-            display: flex;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 30px;
-            justify-content: space-between;
+            justify-items: center;
         }
         .service {
             background: white;
@@ -73,8 +77,8 @@
             overflow: hidden;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s;
-            flex: 1 1 calc(33% - 20px);
-            max-width: calc(33% - 20px);
+            text-align: center;
+            padding: 15px;
         }
         .service:hover {
             transform: translateY(-10px);
@@ -85,16 +89,15 @@
             object-fit: cover;
         }
         .service h3 {
-            color: #ff758c;
-            padding: 10px 20px 0;
+            color: #6a1b9a; /* Purple color for headings */
+            padding: 10px 0;
         }
         .service p {
-            padding: 0 20px 20px;
             font-size: 1em;
             color: #555;
         }
         footer {
-            background-color: #ff758c;
+            background-color: #6a1b9a; /* Purple footer */
             color: white;
             text-align: center;
             padding: 20px;
@@ -103,7 +106,8 @@
 </head>
 <body>
     <header>
-        <h1>Luxe Twines Beauty Spa</h1>
+        <img src="images/lotus-logo.png" alt="CalmAura Beauty Spa Logo" class="logo"> <!-- Placeholder for your logo -->
+        <h1>CalmAura Beauty Spa</h1>
         <p>Your Sanctuary for Relaxation and Rejuvenation</p>
     </header>
     <nav>
@@ -122,7 +126,7 @@
     </div>
     <section id="about" class="about">
         <h2>About Us</h2>
-        <p>Located in Midrand, Luxe Twines Beauty Spa offers top-tier spa services, including Swedish Massage, Thai Massage, Hot Stone Massage, Facial Scrub, Waxing, Manicure, and Pedicure.</p>
+        <p>Located in Midrand, CalmAura Beauty Spa offers top-tier spa services, including Swedish Massage, Thai Massage, Hot Stone Massage, Facial Scrub, Waxing, Manicure, and Pedicure.</p>
     </section>
     <section id="services">
         <h2>Our Services</h2>
@@ -149,18 +153,18 @@
             </div>
             <div class="service">
                 <img src="images/bt.jpg" alt="Braiding">
-                <h3>Braiding</h3>
-                <p>Professional braiding services for stylish and protective hairstyles.</p>
+                <h3>Massage of Your Choice</h3>
+                <p>Professional massaging services to relax your body and mind.</p>
             </div>
             <div class="service">
                 <img src="images/manicure.jpg" alt="Manicure & Pedicure">
-                <h3>Manicure & Pedicure</h3>
-                <p>Pamper your hands and feet with luxurious care.</p>
+                <h3>Pedicure</h3>
+                <p>Pamper your feet with luxurious care.</p>
             </div>
         </div>
     </section>
     <footer>
-        <p>&copy; 2025 Luxe Twines Beauty Spa. All rights reserved. Midrand, Gauteng. Contact: +27 73 770 7739 / 069 417 1354</p>
+        <p>&copy; 2025 CalmAura Beauty Spa. All rights reserved. Midrand, Gauteng. Contact: +27 73 770 7739 / 069 417 1354</p>
     </footer>
     <script>
         $(document).ready(function(){
