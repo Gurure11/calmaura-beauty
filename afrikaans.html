@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="af">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CalmAura Beauty Spa">
+    <meta name="keywords" content="CalmAura Beauty Spa, Beauty spa naby my, Massage naby my, Thai Massage, Swedish massage, gesigbehandeling, manicure & pedikuur, waxing, spa in Midrand">
+    <title>CalmAura Beauty Spa</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            color: grey;
+        }
+        header {
+            background-color: #6a1b9a;
+            color: #FFD700;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3.5em;
+        }
+        header img.logo {
+            width: 80px;
+            margin-top: 20px;
+        }
+        nav {
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #6a1b9a;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #FFD700;
+        }
+        .slider {
+            width: 100%;
+            height: 60vh;
+            overflow: hidden;
+        }
+        .slider img {
+            width: 100%;
+            height: 60vh;
+            object-fit: cover;
+        }
+        section {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            justify-items: center;
+        }
+        .service {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            text-align: center;
+            padding: 15px;
+        }
+        .service:hover {
+            transform: translateY(-10px);
+        }
+        .service img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .service h3 {
+            color: #6a1b9a;
+            padding: 10px 0;
+        }
+        .service p {
+            font-size: 1em;
+            color: #555;
+        }
+        footer {
+            background-color: #6a1b9a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/e1.jpg" alt="CalmAura Beauty Spa Logo" class="logo">
+        <h1>CalmAura Beauty Spa</h1>
+        <p>Jou Toevlugsoord vir Ontspanning en Verjonging</p>
+    </header>
+    <nav>
+        <a href="details.html">Lees Meer</a>
+        <a href="pools.html">Pryse</a>
+        <a href="#services">Dienste</a>
+        <a href="contacts.html">Kontak</a>
+    </nav>
+    <div class="slider">
+        <img src="images/muss.jpg" alt="Swedish Massage">
+        <img src="images/miss.jpeg" alt="Thai Massage">
+        <img src="images/mass.jpeg" alt="Hot Stone Massage">
+        <img src="images/facial.jpg" alt="Facial Scrub">
+        <img src="images/wax.jpg" alt="Waxing">
+        <img src="images/foot.jpg" alt="Manicure & Pedicure">
+    </div>
+    <section id="about" class="about">
+        <h2>Oor Ons</h2>
+        <p>Geleë in Midrand, CalmAura Beauty Spa bied top-gehalte spa dienste aan, insluitend Swedis Massages, Thai Massages, Hot Stone Massages, Gesigbehandelings, Waxing, Manicure en Pedikure.</p>
+    </section>
+    <section id="services">
+        <h2>Ons Dienste</h2>
+        <div class="services">
+            <div class="service">
+                <a href="images/muss.jpg"><img src="images/muss.jpg" alt="Swedish Massage"></a>
+                <h3>Swedis Massage</h3>
+                <p>Ontspannende massering wat bloedsomloop verbeter en spanning verlig.</p>
+            </div>
+            <div class="service">
+                <a href="images/miss.jpg"><img src="images/miss.jpeg" alt="Thai Massage"></a>
+                <h3>Thai Massage</h3>
+                <p>Kombineer akupressuur, jogaagtige rekke en terapeutiese tegnieke.</p>
+            </div>
+            <div class="service">
+               <a href="images/mass.jpg"><img src="images/mass.jpeg" alt="Hot Stone Massage"></a>
+                <h3>Hot Stone Massage</h3>
+                <p>Gebruik verhit klippe om spiere te kalmeer en spanning te verlig.</p>
+            </div>
+            <div class="service">
+               <a href="images/wax.jpg"><img src="images/wax.jpg" alt="Waxing"></a>
+                <h3>Waxing</h3>
+                <p>Gladde haarverwydering behandeling vir sagte en silkerige vel.</p>
+            </div>
+            <div class="service">
+                <a href="images/gara.jpg"><img src="images/gara.jpg" alt="Massage of Your Choice"></a>
+                <h3>Massering van Jou Keuse</h3>
+                <p>Professionele masseringdienste om jou liggaam en gees te ontspan.</p>
+            </div>
+            <div class="service">
+               <a href="images/foot.jpg"><img src="images/foot.jpg" alt="Manicure & Pedicure"></a>
+                <h3>Pedikuur</h3>
+                <p>Bederf jou voete met luukse sorg.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 CalmAura Beauty Spa. Alle regte voorbehou. Midrand, Gauteng. Kontak: +27 73 770 7739 / 069 417 1354</p>
+    </footer>
+    <script>
+        $(document).ready(function(){
+            $('.slider').slick({
+                autoplay: true,
+                autoplaySpeed: 3000,
+                dots: true,
+                arrows: false,
+            });
+        });
+    </script>
+</body>
+</html>
