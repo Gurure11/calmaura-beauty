@@ -2,18 +2,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	
-     
-
-	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4531257337326657"
-     crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Luxe Twines Beauty Spa">
-	<meta name="keywords" content="LUXE TWINES Beauty Spa, Beauty spa near me, Massage near me, Thai Massage, swedish massage services, facial treatment, manicure & pedicure near me, massage spa in Midrand">
-
-    <title>Luxe Twines Beauty Spa - Library</title>
+    <meta name="description" content="CalmAura Beauty Spa">
+    <meta name="keywords" content="CalmAura Beauty Spa, Beauty spa near me, Massage near me, Thai Massage, Swedish Massage, Facial Treatment, Manicure & Pedicure, Waxing, Spa in Midrand">
+    <title>CalmAura Beauty Spa - Services</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -23,13 +17,13 @@
             padding: 0;
         }
         header {
-            background-color: #F2CD55;
-            color: #fff;
+            background-color: #6a1b9a; /* Purple background */
+            color: #FFD700; /* Golden yellow text */
             text-align: center;
             padding: 20px;
         }
         .container {
-            width: 80%;
+            width: 90%;
             margin: 0 auto;
             padding: 20px 0;
         }
@@ -39,10 +33,10 @@
         }
         .gallery {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 20px;
         }
-        .gallery img, .gallery video {
+        .gallery img {
             width: 100%;
             border-radius: 10px;
         }
@@ -50,6 +44,7 @@
             display: grid;
             grid-template-columns: 1fr;
             gap: 20px;
+            margin-bottom: 40px;
         }
         .service .card {
             background-color: #fff;
@@ -57,7 +52,7 @@
             overflow: hidden;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-        .card img, .card video {
+        .card img {
             max-width: 100%;
             display: block;
         }
@@ -66,151 +61,84 @@
             background-color: #2c3e50;
             color: white;
             padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
         }
-        #home:hover{
-            color: white;
-            opacity: 0.6;
-            transition: 0.17s;
-            background-color: blue;
-            cursor: pointer;
+        #home, #cont, #back, #next {
+            color: #6a1b9a; /* Purple text */
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
         }
-        #cont:hover{
-             color: white;
-            opacity: 0.6;
-            transition: 0.17s;
-            background-color: blue;
-            cursor: pointer;
+        #home:hover, #cont:hover, #back:hover, #next:hover {
+            color: #FFD700; /* Golden yellow on hover */
+            opacity: 0.7;
+            transition: 0.3s;
         }
-        #home{
-            align-text: center;
-            margin-left: 200px;
-            margin-right: 50px;
-            color: grey;
+        #pic {
+            width: 250px;
+            border-radius: 125px;
         }
-	    #back{
-		    color: blue;
-		    margin-left: 30px;
-	    }
-	    #back:hover{
-		    color: white;
-            opacity: 0.6;
-            transition: 0.17s;
-            background-color: blue;
-            cursor: pointer;
-	    }
-	    #next{
-		    color: blue;
-		    margin-left: 30px;
-	    }
-	    #next:hover{
-		        color: white;
-            opacity: 0.6;
-            transition: 0.17s;
-            background-color: blue;
-            cursor: pointer;
-	    }
-	    #pic{
-		    width: 300px;
-		    border-radius: 150px;
-		    
-	    }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Welcome to Luxe Twines Beauty Spa</h1>
+    <h1>Welcome to CalmAura Beauty Spa</h1>
     <p>Your Relaxation and Rejuvenation Awaits</p>
 </header>
-    <br>
-    <a id="home" href="index.html">Home </a>
-    <a id="cont" href="contacts.html">Contacts</a><br>
-    <hr>
 
 <div class="container">
     <section>
         <h2>Explore Our Spa Services</h2>
-        <div class="service">
+        <div class="gallery">
             <!-- Images showcasing beauty spa services -->
             <div class="card">
                 <a href="images/foot.jpg"><img src="images/foot.jpg" alt="Foot Massage"></a>
+                <p>Enjoy the foot massage in the comfort of our vibrant rooms</p>
             </div>
-            <p>Enjoy the foot massage in the comfort of our vibrant rooms</p>
             <div class="card">
                 <a href="images/swedish.jpg"><img src="images/swedish.jpg" alt="Swedish Massage"></a>
+                <p>Once you go Swedish, you'll never turn back. Come and indulge your senses.</p>
             </div>
-            <p>They always say, once you go Swedish you will never turn back, come and indulge your senses</p>
             <div class="card">
                 <a href="images/Thai.jpg"><img src="images/Thai.jpg" alt="Thai Massage"></a>
+                <p>The exquisite Thai Massage will leave you breathless. It's unimaginable!</p>
             </div>
-            <p>What could be more breath taking that the excquisite Thai Massage that will blow your mind away. Its Unimaginable</p>
             <div class="card">
                 <a href="images/stone.jpg"><img src="images/stone.jpg" alt="Hot Stone Massage"></a>
+                <p>The hot stone massage will rejuvenate and revive you. We are the best at what we do.</p>
             </div>
-            <p>The hot stone massage will rejuvinate you, it will revive you and we are the best at what we do</p>
             <div class="card">
                 <a href="images/waxed.jpg"><img src="images/waxed.jpg" alt="Waxing"></a>
+                <p>Waxing will bring out the best in you. No limitations—work out and look great!</p>
             </div>
-            <p> Waxing always will the best looks in you, no limitation to what work out can do to you.</p>
             <div class="card">
                 <a href="images/manic.jpg"><img src="images/manic.jpg" alt="Manicure & Pedicure"></a>
+                <p>Pamper yourself with our luxurious manicure & pedicure treatments.</p>
             </div>
-		  <div class="card">
-                <a href="images/niri.jpg"><img src="images/niri.jpg" alt="Foot Massage"></a>
-            </div>
-		  <div class="card">
-                <a href="images/noro.jpg"><img src="images/noro.jpg" alt="Foot Massage"></a>
-            </div>
-            <p>If you want to win his/her heart, look you best with our exotic nail treatment. Come and see for yourself.</p>
-        </div><br>
-	   
-    </section><br>
-	<hr><br>
-	<div class="service">
-		<h3>Our Salon</h3>
-                <a href="images/bt.jpg"><img id="pic" src="images/bt.jpg" alt="Braiding"></a>
-                <h3>Braiding</h3>
-                <p>We are top notch hair technicians with years of experience in braiding leaving looking all brand new and <br>
-                    exotic with our fashionable hair styles that are both breath taking and marvelous to look at.</p><br>
-             <a href="images/Gel.jpg"><img id="pic" src="images/Gel.jpg" alt="Nails Price List"></a></div>
-		<div class="service">
-		
-		</div>
-		<div class="service">
-		
-            </div><br>Seeing is believing<br><br>
-         <div class="service">
-                
-                
-                
-            </div>
-        </div>
-
-    <section>
-        <h2>Videos of Our Spa and Services</h2>
-        
         </div>
     </section>
-</div><br>
-    <br>
-	<a id="back" href="index.html">Back</a>  <a id="next" href="contacts.html">Next</a><br><br>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4531257337326657"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-format="fluid"
-     data-ad-layout-key="-6i+ds+v-5i+f8"
-     data-ad-client="ca-pub-4531257337326657"
-     data-ad-slot="7030443247"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<hr>
+
+    <hr>
+
+    <div class="service">
+        <h3>Our Services</h3>
+        <div class="card">
+            <a href="images/bt.jpg"><img id="pic" src="images/bt.jpg" alt="Braiding"></a>
+            <h3>Braiding</h3>
+            <p>We are top-notch hair technicians with years of experience in braiding, creating fashionable and exotic hairstyles.</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div>
+        <a id="back" href="index.html">Back</a>
+        <a id="next" href="contacts.html">Next</a>
+    </div>
+</div>
+
 <footer>
-    <p>&copy; 2025 Luxe Twines Beauty Spa. All Rights Reserved.</p>
+    <p>&copy; 2025 CalmAura Beauty Spa. All Rights Reserved.</p>
 </footer>
 
 </body>
